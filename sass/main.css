@@ -96,9 +96,42 @@ img {
 }
 
 .head__container {
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  .head__container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .head__container {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .head__container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .current.current {
