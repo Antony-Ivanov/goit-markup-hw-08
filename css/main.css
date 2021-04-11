@@ -103,7 +103,7 @@ img {
 }
 
 .head__container {
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 
@@ -177,7 +177,7 @@ img {
   margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   transition: color 250ms var(--speed-anim);
 }
@@ -286,7 +286,7 @@ img {
 }
 
 .advantages__list {
-  display: flex;
+  /* display: flex; */
   margin-right: -30px;
 }
 
@@ -329,7 +329,7 @@ img {
 }
 
 .products__list {
-  display: flex;
+  /* display: flex; */
   margin-left: -30px;
   margin-top: 50px;
 }
@@ -380,7 +380,7 @@ img {
 }
 
 .social-list {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
 }
@@ -398,7 +398,7 @@ img {
 }
 
 .social-list__link {
-  display: flex;
+  /* display: flex; */
   width: 44px;
   height: 44px;
   align-items: center;
@@ -415,7 +415,7 @@ img {
 }
 
 .footer-social__list {
-  display: flex;
+  /* display: flex; */
   margin-top: 20px;
 }
 
@@ -464,7 +464,7 @@ img {
 }
 
 .our-team__list {
-  display: flex;
+  /* display: flex; */
   margin-right: -30px;
   margin-top: 50px;
 }
