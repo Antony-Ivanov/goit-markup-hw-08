@@ -121,8 +121,7 @@ img {
 
 .head__container {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px 23px 15px 15px;
 }
 
 .nav__link {
@@ -157,6 +156,7 @@ img {
   }
   .burger-button,
   .mibile-menu__close-button {
+    background-color: #fff;
     border-color: transparent;
     border: none;
     padding: 0;
@@ -183,7 +183,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .head__container {
-    width: 768px;
+    width: 767px;
+    margin: 0 auto;
   }
   padding-top: 10px;
   padding-bottom: 10px;
@@ -205,6 +206,10 @@ img {
   .mibile-menu__close-button {
     display: none;
   }
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -220,6 +225,7 @@ img {
   }
   .navigation__list {
     align-items: center;
+    display: flex;
   }
   .navigation__list :not(:last-child) {
     margin-right: 50px;
@@ -251,6 +257,10 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
+}
+
+.navigation {
+  display: flex;
 }
 
 .header__list {

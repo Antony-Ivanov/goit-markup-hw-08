@@ -1,8 +1,7 @@
 .head__container {
   margin: 0 auto;
-  // flex-direction: row;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px 23px 15px 15px;
+  align-items: center;
 }
 
 .nav__link {
@@ -38,6 +37,7 @@
   }
   .burger-button,
   .mibile-menu__close-button {
+    background-color: #fff;
     border-color: transparent;
     border: none;
     padding: 0;
@@ -66,14 +66,19 @@
 }
 
 @media screen and (min-width: 768px) {
+  display: flex;
   .head__container {
-    width: 768px;
+    margin: 0 auto;
   }
-  padding-top: 10px;
-  padding-bottom: 10px;
 
   .burger-button {
     display: none;
+  }
+
+  .head__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
   }
 
   .info__link,
@@ -87,19 +92,36 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    display: none;
   }
 
   .burger-button,
   .mibile-menu__close-button {
     display: none;
   }
-}
 
-@media screen and (max-width: 1199px) {
-  .header__item {
+  .navigation__list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__link {
+  .nav__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+    display: block;
   }
 }
+
+// @media screen and (max-width: 1199px) {
+//   .header__item {
+//     display: flex;
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   width: 1200px;
@@ -108,10 +130,25 @@
   }
   .navigation__list {
     align-items: center;
+    display: flex;
 
     & :not(:last-child) {
       margin-right: 50px;
     }
+  }
+  .head__item {
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .head__icon {
+    margin-right: 10px;
+    align-items: center;
+    fill: var(--color-text);
+    transition: fill 250ms var(--speed-anim);
   }
 }
 
@@ -142,13 +179,15 @@
   }
 }
 
-// .navigation {
-// }
+.navigation {
+  display: flex;
+}
 
 .header__list {
   align-items: center;
   margin-left: auto;
 }
+
 
 // .nav__link {
 //   position: relative;
@@ -206,13 +245,6 @@
 //   }
 //}
 
-.head__item {
-  align-items: center;
-
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
 
 // .head__icon--hover {
 //   .info__link:hover &,
@@ -222,11 +254,4 @@
 //     fill: var(--accent-color);
 //     color: var(--accent-color);
 //   }
-// }
-
-// .head__icon {
-//   margin-right: 10px;
-//   align-items: center;
-//   fill: var(--color-text);
-//   transition: fill 250ms var(--speed-anim);
 // }
