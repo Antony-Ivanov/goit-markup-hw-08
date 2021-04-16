@@ -36,7 +36,7 @@
                     <li class="nav__item">
                         <a class="nav__link link" href="">Контакты</a>
                     </li>
-                </ul> -->
+                </ul>
             </nav>
             <ul class="header__list list">
                 <li class="head__item">
@@ -56,12 +56,30 @@
                     </a>
                 </li>
             </ul> 
-            <button type="button" class="buger-button">
+            <button type="button" class="burger-button" data-menu-button>
                 <svg class="burger-icon">
                     <use href="./img/ikons-sprite/symbol-defs.svg#icon-menu-burger"></use>
                 </svg>
 
             </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button class="mibile-menu__close-button" data-menu-close>
+                <svg class="mobile-menu__close-icon">
+                    <use href="./img/ikons-sprite/symbol-defs.svg#icon-close-icon"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link link current">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link link">Контакты</a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -78,7 +96,7 @@
         </section>
 
         <!--advantages-->
-        <!-- <section class="advantages">
+        <section class="advantages">
             <div class="advantages__container container">
                 <ul class="advantages__list list">
                     <li class="advantages__item">
@@ -119,10 +137,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!--products company-->
-        <!-- <section class="products-company">
+            <!-- products company -->
+         <!-- <section class="products-company">
             <div class="products__container container">
                 <h2 class="products__title" >Чем мы занимаемся</h2>
                 <ul class="products__list list">
@@ -154,7 +172,7 @@
             </div>
         </section> -->
 
-        <!--our team-->
+                    <!--our team-->
         <!-- <section class="our-team">
             <div class="container">
                 <h2 class="our-team__title">Наша команда</h2>
@@ -484,7 +502,9 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js, ./js/mobile-menu.js"></script> -->
+
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 
