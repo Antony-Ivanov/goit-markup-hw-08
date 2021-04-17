@@ -1,62 +1,68 @@
-.hero {
-  background-color: var(--bgrnd-her);
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
   margin-bottom: 30px;
-}
-
-.overlay {
-  padding-top: 118px;
-  padding-bottom: 118px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("/img/img-mod/desk_img/bgrnd/Img.jpg");
-  background-color: var(--background-secondary-color);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .overlay {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("/img/img-mod/desk_img/bgrnd/Img@2x.jpg");
-  }
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 480px) {
-  .overlay {
-    // max-width: 480px;
-    margin: 0 auto;
+  // .overlay {
+  //   // max-width: 480px;
+  //   margin: 0 auto;
+  // }
+}
+
+@media screen and (max-width: 768) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    align-items: center;
   }
+  // .hero__container {
+  //   min-height: 400px;
+  // }
 }
 
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 767px;
+    min-height: 400px;
   }
+
+  .hero__container {
+    padding: 118px 204px 118px 204px;
+  }
+
+  // .hero__title {
+  //   font-weight: 900;
+  //   font-size: 26px;
+  //   line-height: 1.61;
+  //   letter-spacing: 0.06em;
+  //   text-transform: uppercase;
+  //   color: var(--white-color);
+  //   margin-bottom: 30px;
+  // }
 }
+
 @media screen and (min-width: 1200px) {
   .overlay {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
+
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+.hero {
+  background-color: var(--bgrnd-her);
+  text-align: center;
 }
