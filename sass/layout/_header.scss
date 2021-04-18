@@ -64,7 +64,7 @@
 @media screen and (min-width: 768px) {
   .head__container {
     margin: 0 auto;
-    min-width: 768px;
+    width: 768px;
     padding: 0px 15px 0px 15px;
   }
 
@@ -88,9 +88,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    // &--left {
-    //   margin-left: 50px;
-    // }
   }
 
   .info__link {
@@ -123,9 +120,12 @@
 
   .navigation__list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  .navigation {
+    justify-content: space-between;
   }
 
   .navigation__list:not(:last-child) {
@@ -160,7 +160,6 @@
     margin-left: auto;
     padding-top: 5px;
     // padding-bottom: 5px;
-    //display: flex;
     align-items: center;
     transition: color 250ms var(--speed-anim);
 
@@ -178,7 +177,6 @@
     color: var(--color-text);
     // padding-top: 5px;
     // padding-bottom: 32px;
-    //display: flex;
     align-items: center;
     transition: color 250ms var(--speed-anim);
 
