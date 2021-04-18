@@ -15,20 +15,3 @@
   display: inline-block;
   cursor: pointer;
 }
-
-.overlay {
-  // max-width: 1600px;
-  // height: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../img/hero-bgrnd-img/bgrnd-img.jpg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--hero-bgrnd-color);
-}

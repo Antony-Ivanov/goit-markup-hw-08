@@ -396,13 +396,43 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .overlay {
+    max-width: 480px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/img-mod/mobile_img/hero-bgrnd-mob/hero-bgrnd-mob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--hero-bgrnd-color);
+  }
+  .hero {
+    text-align: center;
+    min-height: 400px;
+    background-color: var(--bgrnd-her);
+    align-items: center;
+  }
+  .hero__container {
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .hero__container {
+    padding: 118px 204px 118px 204px;
+  }
   .overlay {
     max-width: 767px;
     min-height: 400px;
-  }
-  .hero__container {
-    padding: 118px 204px 118px 204px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/img-mod/tablets_img/hero-bgrnd-tablet/hero-bgrnd-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--hero-bgrnd-color);
   }
 }
 
@@ -411,6 +441,13 @@ img {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/img-mod/desk_img/bgrnd/Img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--hero-bgrnd-color);
   }
   .hero__title {
     font-weight: 900;
@@ -419,11 +456,6 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
-}
-
-.hero {
-  background-color: var(--bgrnd-her);
-  text-align: center;
 }
 
 .hero__btn {
@@ -442,16 +474,6 @@ img {
   padding-bottom: 10px;
   display: inline-block;
   cursor: pointer;
-}
-
-.overlay {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero-bgrnd-img/bgrnd-img.jpg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--hero-bgrnd-color);
 }
 
 .advantages {
