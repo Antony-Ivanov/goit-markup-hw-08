@@ -281,6 +281,8 @@ img {
 @media screen and (min-width: 1200px) {
   .head__container {
     width: 1200px;
+    display: flex;
+    justify-content: space-between;
   }
   .current::after {
     position: absolute;
@@ -424,7 +426,7 @@ img {
     min-height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/img-mod/mobile_img/hero-bgrnd-mob/hero-bgrnd-mob.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img-mod/mobile_img/hero-bgrnd-mob/hero-bgrnd-mob.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -483,28 +485,13 @@ img {
   cursor: pointer;
 }
 
-.advantages {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.advantages__list {
-  display: block;
-}
-
-.advantages__item {
-  width: 100%;
-}
-
-.advantages__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .advantages__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--color-text);
+  margin-top: 10px;
 }
 
 .advantages__title {
@@ -515,6 +502,52 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-title);
+  margin-bottom: 10px;
+}
+
+.advantages-logo__container {
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--qwerty-color);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .advantages__item {
+    width: 100%;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .advantages__list {
+    display: block;
+  }
+  .advantages-logo__container {
+    width: 450px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--qwerty-color);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .advantages-logo__container {
+    width: 354px;
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -533,11 +566,6 @@ img {
   .advantages-logo__container {
     width: 270px;
     height: 120px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    background-color: var(--qwerty-color);
-    margin-bottom: 30px;
   }
 }
 
