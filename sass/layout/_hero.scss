@@ -7,16 +7,22 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: var(--gradient-hero),
       url("./img/img-mod/mobile_img/hero-bgrnd-mob/hero-bgrnd-mob.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--hero-bgrnd-color);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page-hero--overlay {
+      background-image: var(--gradient-hero),
+        url("../../img/img-mod/hero-bgrnd-mob/hero-bgrnd-mob@2x.jpg x2");
+    }
   }
 
   .hero {
@@ -53,16 +59,22 @@
     min-height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../../img/img-mod/mobile_img/hero-bgrnd-mob/hero-bgrnd-mob.jpg");
+    background-image: var(--gradient-hero),
+      url("../../img/img-mod/tablets_img/hero-bgrnd-tablet/hero-bgrnd-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--hero-bgrnd-color);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page-hero--overlay {
+      background-image: var(--gradient-hero),
+        url("../../img/img-mod/tablets_img/hero-bgrnd-tablet/hero-bgrnd-tablet@2x.jpg x2");
+    }
   }
 
   .hero__title {
@@ -83,11 +95,7 @@
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+    background-image: var(--gradient-hero),
       url("../../img/img-mod/desk_img/bgrnd/img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,5 +111,14 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     color: var(--white-color);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page-hero--overlay {
+      background-image: var(--gradient-hero),
+        url("../../img/img-mod/desk_img/bgrnd/img@2x.jpg x2");
+    }
   }
 }

@@ -9,12 +9,13 @@
 
 .current {
   color: var(--accent-color);
+  position: relative;
   &::after {
     position: absolute;
     left: 0;
     bottom: 0;
     content: "";
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 4px;
     background-color: var(--accent-color);
@@ -154,9 +155,11 @@
   }
 
   // .current::after {
+  //   content: "";
   //   position: absolute;
   //   bottom: 0;
   //   left: 0;
+  //   display: inline-block;
   //   // align-items: flex-end;
   // }
 
@@ -172,7 +175,7 @@
     padding-bottom: 32px;
   }
   .navigation {
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   .nav__link:not(:last-child) {
@@ -187,6 +190,7 @@
     letter-spacing: 0.02em;
     color: var(--color-title);
     display: block;
+    height: 100%;
   }
 
   .head__icon {
@@ -264,9 +268,25 @@
 
   // .current::after {
   //   position: absolute;
-  //   bottom: -65px;
+  //   // bottom: -220%;
+  //   bottom: 0;
   //   left: 0;
   // }
+
+  .current.current {
+    color: var(--accent-color);
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
 
   .navigation__list {
     align-items: center;

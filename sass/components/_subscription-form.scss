@@ -22,14 +22,12 @@
 }
 
 .form__box {
-  display: flex;
   margin-top: 20px;
 }
 
 .email__input {
-  width: 358px;
   height: 50px;
-  margin-right: 12px;
+  width: 450px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 16px;
@@ -42,6 +40,7 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+  margin-bottom: 20px;
 }
 
 .modal-btn__icon {
@@ -49,6 +48,7 @@
 }
 
 .modal-signup__btn {
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -70,5 +70,33 @@
   &:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
+  }
+
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-madal__title {
+    text-align: center;
+  }
+
+  .email__input {
+    justify-content: center;
+  }
+
+  .form__box {
+    // justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__box {
+    display: flex;
+  }
+
+  .email__input {
+    margin-right: 12px;
+    width: 358px;
   }
 }
