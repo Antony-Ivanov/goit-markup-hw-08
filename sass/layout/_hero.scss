@@ -19,7 +19,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .page-hero--overlay {
+    .overlay {
       background-image: var(--gradient-hero),
         url("../img/img-mod/mobile_img/hero-bgrnd-mob/hero-bgrnd-mob@2x.jpg x2");
     }
@@ -71,7 +71,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .page-hero--overlay {
+    .overlay {
       background-image: var(--gradient-hero),
         url("../img/img-mod/tablets_img/hero-bgrnd-tablet/hero-bgrnd-tablet@2x.jpg x2");
     }
@@ -112,11 +112,12 @@
     margin-bottom: 30px;
     color: var(--white-color);
   }
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .page-hero--overlay {
+    .overlay {
       background-image: var(--gradient-hero),
         url("../img/img-mod/desk_img/bgrnd/img@2x.jpg x2");
     }
