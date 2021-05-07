@@ -10,17 +10,17 @@
 .current.current {
   color: var(--accent-color);
   position: relative;
-  &:after {
-    position: absolute;
-    left: 0px;
-    bottom: -33px;
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
+  // &:after {
+  //   position: absolute;
+  //   left: 0px;
+  //   bottom: -33px;
+  //   content: "";
+  //   display: inline-block;
+  //   width: 100%;
+  //   height: 4px;
+  //   background-color: var(--accent-color);
+  //   border-radius: 2px;
+  // }
 }
 
 .navigation {
@@ -60,8 +60,8 @@
   .mobile-menu {
     position: fixed;
     top: 0;
-    // left: 50%;
-    left: 0;
+    left: 50%;
+    // left: 0;
     width: 100vw;
     height: 100vw;
     padding: 48px 40px;
@@ -69,17 +69,17 @@
     transition: transform 250ms var(--speed-anim);
 
     padding: 48px 40px;
-    // transform: translateY(-100%) translateX(-50%);
-    transform: translateY(-100%);
+    transform: translateY(-100%) translateX(-50%);
+    // transform: translateY(-100%);
     transition: all 250ms var(--speed-anim);
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: scroll;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    // opacity: 0;
+    // visibility: hidden;
+    // pointer-events: none;
   }
 
   .mobile-menu__item:not(:last-child) {

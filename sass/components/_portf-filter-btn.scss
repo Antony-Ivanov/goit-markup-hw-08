@@ -30,10 +30,19 @@
 
 .gallery-filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .gallery-filter__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-filter__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }

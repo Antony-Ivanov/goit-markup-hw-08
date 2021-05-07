@@ -946,18 +946,6 @@ img {
   position: relative;
 }
 
-.current.current:after {
-  position: absolute;
-  left: 0px;
-  bottom: -33px;
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -993,23 +981,20 @@ img {
   .mobile-menu {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100vw;
     height: 100vw;
     padding: 48px 40px;
     background-color: var(--white-color);
     transition: transform 250ms var(--speed-anim);
     padding: 48px 40px;
-    transform: translateY(-100%);
+    transform: translateY(-100%) translateX(-50%);
     transition: all 250ms var(--speed-anim);
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: scroll;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
   }
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
@@ -1058,7 +1043,7 @@ img {
     color: var(--accent-color);
   }
   .is-open {
-    transform: translateY(0);
+    transform: translateY(0) translateX(-50%);
   }
   .mobile-menu .is-open {
     opacity: 1;
@@ -1330,17 +1315,25 @@ img {
 
 .gallery-filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .gallery-filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 1200px) {
+  .gallery-filter__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
 .gallery-cards__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .cards-title__container {
@@ -1349,19 +1342,6 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
-
-.gallery-cards__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.gallery-cards__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .cards__title {
@@ -1401,19 +1381,109 @@ img {
   left: 0;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 24px 63px 24px 63px;
+  padding: 24px 77px 24px 77px;
   overflow-y: scroll;
-  transform: translateY(100%);
+  transform: translateX(100%);
   transition: transform 250ms var(--speed-anim);
 }
 
 .gallery-cards__link:hover .overlay__text,
 .gallery-cards__link:focus .overlay__text {
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 
 .gallery-cards__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .gallery-filter__item--mobile {
+    margin-bottom: 15px;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: var(--white-color);
+    transform: translateY(-100%);
+    transition: transform 250ms var(--speed-anim);
+  }
+  .is-open {
+    transform: translateY(0);
+  }
+  .mobile-menu .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .burger-button,
+  .mibile-menu__close-button {
+    background-color: #fff;
+    border-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .burger-icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--color-title);
+  }
+  .mobile-menu__close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cards-title__container--height {
+    padding-bottom: 56px;
+  }
+  .gallery-cards__item {
+    max-width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .gallery-cards__item .img {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+  }
+  .gallery-cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .overlay-text {
+    padding: 24px 49px 24px 49px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-cards__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .gallery-cards__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .gallery-cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .backdrop {
