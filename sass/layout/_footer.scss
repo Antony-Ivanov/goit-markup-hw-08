@@ -1,11 +1,11 @@
 .footer {
   background-color: var(--bgrnd-color);
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin: 0 auto;
   // display: flex;
   // align-items: baseline;
@@ -136,8 +136,6 @@
   }
 
   .footer__container {
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
     align-items: baseline;
     // justify-content: space-between;

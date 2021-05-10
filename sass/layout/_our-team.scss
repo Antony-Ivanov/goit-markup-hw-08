@@ -140,13 +140,16 @@
 
 @media screen and (min-width: 1200px) {
   .our-team {
-    width: 1200px;
-    margin: 0 auto;
     // padding: 94px 15px;
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  .our-team__container {
     justify-content: center;
     align-items: center;
+    width: 1200px;
+    margin: 0 auto;
   }
 
   .our-team__photo {

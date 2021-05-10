@@ -5,7 +5,26 @@
   letter-spacing: 0.03em;
   color: var(--color-title);
   text-align: center;
-  // margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.clients {
+  padding: 60px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    margin-bottom: 30px;
+    // width: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
+    height: 90px;
+  }
+
+  &__item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 .clients__list {
@@ -41,39 +60,48 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
 
-    &__item {
-      display: flex;
-      margin-bottom: 30px;
-      width: calc((100% - 30px) / 2);
-      height: 90px;
-      margin-top: 30px;
+  .clients__item {
+    display: flex;
+    // margin-bottom: 30px;
+    width: calc((100% - 30px) / 3);
+    height: 90px;
+    // margin-top: 30px;
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
     }
 
-    &__item:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
+    &:nth-child(-n + 3) {
+      margin-bottom: 30px;
     }
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-}
+// @media screen and (min-width: 320px) and (max-width: 767px) {
+// }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   // .clients__list {
   //   flex-basis: calc(100% / 3 - 90px);
   // }
 
-  .clients__item {
-    width: calc((100% - 30px * 2) / 3);
-  }
-  .clients__item:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-  }
+  // .clients {
+  //   padding: 60px 0px;
+  // }
+
+  // .clients__item {
+  //   width: calc((100% - 30px * 2) / 3);
+  // }
+
+  // .clients__item:nth-last-child(-n + 3) {
+  //   margin-bottom: 0px;
+  // }
 }
 
 @media screen and (min-width: 1200px) {
@@ -83,10 +111,11 @@
   }
 
   .clients__item {
-    // .clients__list & {
-    //   width: calc((100%-150) / 6 - 30);
-    //   // margin-right: 30px;
-    // }
+    .clients__list & {
+      // width: calc((100%-150) / 6 - 30);
+      // margin-right: 30px;
+      margin-bottom: 0;
+    }
 
     .clients__list &:last-child {
       margin-right: 0;
@@ -98,16 +127,20 @@
     height: 90px;
   }
 
+  .clients__title {
+    margin-bottom: 50px;
+  }
+
   .clients__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 
   .clients__items {
     flex-wrap: nowrap;
-    margin-top: 50px;
+    // margin-top: 50px;
     width: calc((100% - 30px * 5) / 6);
-    flex-basis: calc(100% / 6 - 30px);
+    // flex-basis: calc(100% / 6 - 30px);
   }
 }
