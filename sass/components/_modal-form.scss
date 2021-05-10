@@ -55,7 +55,8 @@
 
 .modal-form {
   /* padding: 40px; */
-  max-width: 100%;
+  // width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -204,4 +205,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
 }
