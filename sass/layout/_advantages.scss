@@ -34,7 +34,7 @@
   border-radius: 4px;
   background-color: var(--qwerty-color);
   margin-bottom: 30px;
-  min-width: 320px;
+  // max-width: 320px;
 }
 
 @media screen and (max-width: 767px) {
@@ -54,9 +54,9 @@
   }
 
   .advantages-logo__container {
-    // width: 450px;
+    max-width: 450px;
     // width: 100vw;
-    width: 100%;
+    // width: 100%;
     height: 120px;
   }
 }
@@ -88,6 +88,7 @@
 
   .advantages-logo__container {
     width: 354px;
+    // width: 100%;
     height: 120px;
     // flex-wrap: wrap;
 

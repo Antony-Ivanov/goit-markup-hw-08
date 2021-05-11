@@ -223,6 +223,7 @@ img {
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -232,8 +233,6 @@ img {
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: var(--gradient-hero), url("../img/img-mod/desk_img/bgrnd/img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -248,6 +247,8 @@ img {
     text-transform: uppercase;
     margin-bottom: 30px;
     color: var(--white-color);
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -265,14 +266,15 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--accent-color);
   padding: 10px 0px;
   display: inline-block;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border: none;
 }
 
 .advantages__container {
@@ -308,7 +310,6 @@ img {
   border-radius: 4px;
   background-color: var(--qwerty-color);
   margin-bottom: 30px;
-  min-width: 320px;
 }
 
 @media screen and (max-width: 767px) {
@@ -326,7 +327,7 @@ img {
     display: block;
   }
   .advantages-logo__container {
-    width: 100%;
+    max-width: 450px;
     height: 120px;
   }
 }
@@ -1558,9 +1559,7 @@ img {
   position: absolute;
   right: 8px;
   top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1693,25 +1692,11 @@ img {
 }
 
 .modal-form__btn {
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  align-self: center;
+  align-items: center;
   text-align: center;
   justify-content: center;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  background-color: var(--accent-color);
   padding-top: 10px;
   padding-bottom: 10px;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  /* outline: none; */
-  border: none;
   margin-top: 30px;
 }
 
