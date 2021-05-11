@@ -69,6 +69,10 @@
     padding-left: 122px;
   }
 
+  .social-list {
+    justify-content: center;
+  }
+
   .our-team .container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -80,6 +84,10 @@
   .our-team__item {
     justify-content: center;
     align-items: center;
+  }
+
+  .our-team__photo {
+    width: 100%;
   }
 }
 
