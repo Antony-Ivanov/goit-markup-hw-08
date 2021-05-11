@@ -122,12 +122,13 @@
   .advantages {
     padding-top: 94px;
     padding-bottom: 94px;
-    // justify-content: center;
-    // align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .advantages__list {
     max-width: 1170px;
+    // width: 100vw;
     display: flex;
     flex-wrap: nowrap;
 
@@ -143,11 +144,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    //   margin-bottom: 30px;
-    // }
 
-    // & .advantages__item:last-child {
-    //   margin-right: 0px;
+    & .advantages__item:last-child {
+      margin-right: 0px;
+    }
   }
 }
 
