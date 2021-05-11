@@ -48,6 +48,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__container {
     padding: 118px 204px 118px 204px;
+    text-align: center;
   }
 
   .overlay {
@@ -130,5 +131,8 @@
       background-image: var(--gradient-hero),
         url("../img/img-mod/desk_img/bgrnd/img@2x.jpg");
     }
+  }
+  .hero__container {
+    text-align: center;
   }
 }

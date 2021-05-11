@@ -195,6 +195,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__container {
     padding: 118px 204px 118px 204px;
+    text-align: center;
   }
   .overlay {
     min-height: 400px;
@@ -255,6 +256,12 @@ img {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: var(--gradient-hero), url("../img/img-mod/desk_img/bgrnd/img@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    text-align: center;
   }
 }
 
